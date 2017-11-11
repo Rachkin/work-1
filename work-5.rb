@@ -1,4 +1,6 @@
+#!/usr/bin/env ruby
 path = File.expand_path(".")
+Dir.mkdir(path + "/targets") if !File.directory?(path + "/targets")
 Dir.mkdir(path + "/at_time") if !File.directory?(path + "/at_time")
 array_of_document_types = [".pdf",".doc",".docx",".txt"]
 array_of_image_types = [".jpg",".png",".jpeg",".gif"]
